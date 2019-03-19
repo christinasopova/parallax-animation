@@ -1,0 +1,9 @@
+body {
+  height: 100vh;
+  background-color: white;
+  background-image: linear-gradient(
+    to bottom,
+    RGBA(0, 0, 0, 0.7),
+    RGBA(0, 0, 0, 1) 90%
+  );
+}

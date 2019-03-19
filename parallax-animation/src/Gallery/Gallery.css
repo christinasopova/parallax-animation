@@ -1,0 +1,86 @@
+.animation-container {
+  height: 700px;
+  position: absolute;
+  top: 20%;
+  transform: perspective(100px);
+  perspective: 100px;
+}
+.wrapper {
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  perspective-origin: right;
+  transform-style: preserve-3d;
+  transform: perspective(100px) translate3d(0px, -15px, 0px) scale3d(1, 1, 1)
+    rotateZ(10deg) rotateX(0deg) rotateY(0deg) skewX(-20deg);
+}
+.row {
+  display: flex;
+}
+
+.img {
+  box-shadow: 70px 20px 40px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  background-color: RGBA(255, 222, 58, 1);
+}
+
+.img-1,
+.img-3,
+.img-6 {
+  width: 300px;
+  height: 200px;
+  opacity: 0;
+}
+
+.img-2,
+.img-4,
+.img-5 {
+  width: 150px;
+  height: 200px;
+}
+
+.img-7,
+.img-9 {
+  width: 150px;
+  height: 200px;
+}
+.img-8 {
+  width: 300px;
+  height: 200px;
+}
+
+.img-1 {
+  z-index: 2;
+}
+
+.img-7 {
+  z-index: 1;
+}
+
+.img-5 {
+  z-index: 3;
+}
+
+.img-6 {
+  z-index: 2;
+}
+.img-3,
+.img-8 {
+  z-index: 3;
+}
+
+[data-aos="anim1"] {
+  opacity: 1;
+  transition-property: transform, opacity;
+}
+
+[data-aos="anim3"] {
+  opacity: 1;
+  transition-property: transform, opacity;
+}
+
+[data-aos="anim6"] {
+  opacity: 1;
+  transition-property: transform, opacity;
+}
